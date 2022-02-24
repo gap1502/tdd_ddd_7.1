@@ -11,21 +11,21 @@ public class CreditCalculatorTest {
 
     @Test
     void CalculationMonthPay() {
-        int expected = 350000;
+        int expected = 31428;
         int actual = calculator.monthPay(summa, percent, period);
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
     void CalculationTotalAmount() {
-        int expected = 300000;
+        int expected = 1131433;
         int actual = calculator.totalAmount(summa, percent, period);
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
     void CalculationOverPay() {
-        int expected = 650000;
+        int expected = 131433;
         int actual = calculator.overPay(summa, percent, period);
         Assertions.assertEquals(expected, actual);
     }
